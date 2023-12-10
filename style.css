@@ -17,9 +17,15 @@
     
 }
 
-.nav-links a {
-    color: #fff;
+.nav-links a:hover {
+  background-color: #ddd;
+    color:black;
+    
 }
+.nav-links a{
+  color: white;
+}
+
 
 /* LOGO */
 #logo {
@@ -47,7 +53,9 @@
     display: grid;
   column-gap: 50px;
   row-gap:50px;
-  grid-template-columns: auto auto ;
+  grid-template-columns: auto auto auto ;
+  /* display: flex; */
+  flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 10px;
   margin: 50px;
@@ -55,25 +63,12 @@
 }
 .fea {
     display: grid;
-
-    width: 300px;
     background-color: rgb(211, 211, 211);;
     padding: 10px;
-    
+    margin: auto;
     text-align: center;
     border-radius: 10px;
     
-}
-
-#fea3{
-    width: 300px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(211, 211, 211);
-    border-radius: 10px;
-    padding: 10px;
-    text-align: center;
-    align-items: center;
 }
 
 #aboutus{
@@ -114,11 +109,10 @@
 }
 
 #button{
-    /* align-content: center; */
+    
   border:1px solid black;
   border-radius: 10px;
   align-items: center;
-  /* justify-content: center; */
   color:dodgerblue;
   padding: 16px 32px;
   cursor: pointer;
